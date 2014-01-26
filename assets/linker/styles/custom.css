@@ -1,0 +1,288 @@
+﻿html {
+    height:100%;
+}
+
+body {
+    background-image:url('/Content/images/mainbg.png');
+    margin:0;
+    background-repeat:repeat; 
+}
+
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Century Gothic','Tw Cen MT',Futura,"URW Gothic L",Arial,sans-serif;
+}
+
+
+.fancy-img {
+
+    box-shadow: 5px 5px 5px #808080;
+    
+}
+
+.jumbotron {
+    margin-top:4%;
+    background-color:rgba(103, 50, 11, 0.11);
+    color:rgb(103, 50, 11);
+    text-align:center;
+    padding: 0.5em 0.6em;
+}
+
+    .jumbotron h1 {
+        margin-top:2px;
+    }
+
+
+#heade {
+  background-color: #ffd727;
+  height: 40px;
+  position: relative;
+  margin: 80px auto 0;
+}
+
+
+#heade ul {
+  margin: 0 auto;
+  width: 900px;
+  padding: 0;
+  list-style: none;
+}
+
+#heade ul li {
+  float: left;
+  width: 177px;
+}
+
+#heade ul li:nth-of-type(3) {
+  margin-left: 147px;
+}
+
+#heade ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 12px 0 0 0;
+  height: 28px;
+}
+
+#heade ul li a:hover {
+  background: rgb(235,200,35);
+}
+
+.alogo {
+  position: absolute;
+  left: 50%;
+  margin: -70px 0 0 -146px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .alogo {
+    bottom: 100%;
+  }
+
+  #heade ul li:nth-of-type(3) {
+    margin-left: 0;
+  }
+  
+  #heade ul {
+    width: 600px;
+    position: relative;
+  }
+}
+
+
+
+
+#icon-fb {
+    background-image:url('/Content/images/icon-fb.png');
+    background-repeat:no-repeat;
+}
+
+#banner-small {
+    background-image:url('/Content/images/sugarmama-banner-small.png');
+    background-repeat:no-repeat;
+}
+
+#canvasWrapper {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    overflow:hidden;
+}
+
+#canvas {
+    display:block;
+}
+
+#footerWrapper {
+    position:absolute;
+    width:100%;
+    background-color:rgba(103, 50, 11, 0.64);
+    display:block;
+
+}
+
+footer {
+    padding: 10%;
+    display:block;
+}
+
+.navbar-nav.nav-justified > li{
+    float:none;
+}
+
+.navbar-inverse {
+    background-color:rgba(0, 0, 0, 0.60);
+    border:none;
+    
+}
+.navbar-collapse {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.navbar-nav > li > a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+}
+
+.navbar {
+    min-height: 28px;
+    color: white;
+}
+
+.topnav > li > a {
+    color:white; 
+}
+
+.navbar-right {
+    padding-right:15px;
+     padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.bottom-navbar li > a {
+    color: rgb(209, 184, 43) !important;
+}
+
+.bottom-navbar li > a:hover {
+   text-decoration:underline;
+}
+
+.top-navbar li > a {
+    color: rgb(209, 184, 43) !important;
+}
+
+.top-navbar li > a:hover {
+   text-decoration:underline;
+}
+
+
+@font-face
+{
+font-family: walkway-bold;
+src: url('../../fonts/walkway-bold.ttf');
+}
+
+.form-signin {
+    max-width: 50%;
+    padding: 19px 19px 19px;
+    background-color:rgba(103, 50, 11, 0.11);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom:40px;
+}
+
+.form-label {
+    font-family:'Century Gothic', Arial; 
+    font-weight:100; 
+    color:rgb(103, 50, 11)
+}
+
+.form-group {
+    font-family:'Century Gothic', Arial; 
+    font-weight:100; 
+}
+
+#home-page {
+    background-image:url('/Content/images/spa_facial_face.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    min-height:100%;
+    min-width:100%;
+}
+
+
+
+.background {
+    background-image:url('/Content/images/sugarMamaMain.png');
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.top-bar a {
+    color:white;
+    font-family:'Century Gothic', Arial;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.centerer {
+  text-align:center; /* Align center inline elements */
+  font: 0/0 a;
+}
+.dummy {
+    padding-top:100%;
+}
+
+.center {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.centered {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
