@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image:url('/Content/images/mainbg.png');
+    background-image:url('/images/mainbg.png');
     margin:0;
     background-repeat:repeat; 
 }
@@ -92,13 +92,6 @@ h1, h2, h3, h4, h5, h6, a {
   }
 }
 
-
-
-
-#icon-fb {
-    background-image:url('/Content/images/icon-fb.png');
-    background-repeat:no-repeat;
-}
 
 #banner-small {
     background-image:url('/Content/images/sugarmama-banner-small.png');
@@ -210,7 +203,7 @@ src: url('../../fonts/walkway-bold.ttf');
 }
 
 #home-page {
-    background-image:url('/Content/images/spa_facial_face.jpg');
+    background-image:url('/images/spa_facial_face.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     height: 100%;
@@ -222,7 +215,7 @@ src: url('../../fonts/walkway-bold.ttf');
 
 
 .background {
-    background-image:url('/Content/images/sugarMamaMain.png');
+    background-image:url('/images/sugarMamaMain.png');
     background-position:center;
     background-repeat:no-repeat;
 }

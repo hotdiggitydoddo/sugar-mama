@@ -7,28 +7,28 @@
     <meta name="keywords" content="sugarmama, sugar, mama, sugarmamaskinsugartan, sugaring, waxing, spray tanning, facial, 
     microderm, stanton, huntington beach, luxury, serene, rich, royal, best, orange county, tan, silky, soft, smooth" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <title>@ViewBag.Title</title>
+    <title><%- title %></title>
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/linker/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/linker/styles/custom.css">
+    <!--STYLES END-->
+
      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
-
-     <!--STYLES-->
-     <link rel="stylesheet" href="/linker/styles/bootstrap.min.css">
-     <link rel="stylesheet" href="/linker/styles/custom.css">
-     <!--STYLES END-->
 </head>
 <body>
-    <!--SCRIPTS-->
-    <script src="/linker/js/socket.io.js"></script>
-    <script src="/linker/js/sails.io.js"></script>
-    <script src="/linker/js/app.js"></script>
-    <script src="/linker/js/jquery-1.10.2.js"></script>
-    <script src="/linker/js/bootstrap.min.js"></script>
-    <!--SCRIPTS END-->
-    <%- partial('partials/topNav') %>
-    <%- body %>
-    <%- partial('partials/bottomNav') %>
+     <!--SCRIPTS-->
+     <script src="/linker/js/socket.io.js"></script>
+     <script src="/linker/js/sails.io.js"></script>
+     <script src="/linker/js/app.js"></script>
+     <script src="/linker/js/jquery-1.10.2.js"></script>
+     <script src="/linker/js/bootstrap.min.js"></script>
+     <!--SCRIPTS END-->
+     <%- partial('partials/topNav') %>
+     <%- body %>
 </body>
 </html>
