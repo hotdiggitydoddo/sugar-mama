@@ -1,0 +1,54 @@
+﻿<div class="container">
+    <div class="jumbotron">
+        <h1>Questions or comments?</h1>
+        <h3>Please <u>call</u> to schedule an appointment.  Online booking coming soon!</h3>
+        <h3>Your feedback is welcome!  Feel free to fill out the form below or send an <a href="mailto:deborah@sugarmamaskinsugartan.com">e-mail</a>.</h3>
+    </div>
+
+    <div class="row" style="margin-left: 2px;">
+        <div class="form-signin col-md-6">
+            <form action='/contact' method="post">
+                <input type='hidden' name="_csrf" value="<%= _csrf %>">
+                <div class="form-group">
+                    <label class="form-label">Your Email Address</label>
+                    <input class="form-control" id="emailAddress" type="text" placeholder="Email Address" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Subject</label>
+                    <input class="form-control" id="emailAddress" type="text" placeholder="Subject" />
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="body" rows="8" cols="20" placeholder="Enter message here..."></textarea>
+                </div>
+                <button class="btn btn-success" type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <div style="text-align:center;">
+                <img src="/images/sugarMamaMain.png" alt="SugarMaMa Skin · Sugar · Tan " style="height:65%; width:65%" />
+                <br />
+                <br />
+                <p style="font-family:'Century Gothic', Arial; font-weight:100; font-size:small;"><span style="color:rgb(103, 50, 11); text-decoration:underline;">address</span></p>
+                <p style="font-family:'Century Gothic', Arial; font-weight:100; font-size:medium; margin-top:-10px; letter-spacing:.2em;">12362 beach blvd</p>
+                <p style="font-family:'Century Gothic', Arial; font-weight:100; font-size:medium; margin-top:-10px; letter-spacing:.2em;">suite 29b</p>
+                <p style="font-family:'Century Gothic', Arial; font-weight:100; font-size:medium; margin-top:-10px; letter-spacing:.2em;">stanton, ca 90680</p>
+                <hr style="border-color:saddlebrown; max-width:50%;" />
+                <p style="font-family:'Century Gothic', Arial; font-weight:100; font-size:small;"><span style="color:rgb(103, 50, 11); text-decoration:underline;">phone/appointments</span></p>
+                <p style="font-family:'Century Gothic', Arial; font-weight:100; font-size:medium; margin-top:-10px; letter-spacing:.2em;">562.484.8653</p>
+                <hr style="border-color:saddlebrown; max-width:50%;" />
+                <p style="font-family:'Century Gothic', Arial; font-weight:100; font-size:small;"><span style="color:rgb(103, 50, 11); text-decoration:underline;">e-mail</span></p>
+                <p style="font-family:'Century Gothic', Arial; font-weight:100; font-size:medium; margin-top:-10px; letter-spacing:-1px"><a style="color:black" href="mailto:deborah@sugarmamaskinsugartan.com">deborah@sugarmamaskinsugartan.com</a></p>
+
+            
+            </div>
+            <br />
+        </div>    
+    </div>
+
+    
+</div>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+
