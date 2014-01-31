@@ -47,7 +47,40 @@ module.exports = {
    */
    contact: function (req, res) {
     
+    var Recaptcha = require('re-captcha');
+
+    var PUBLIC_KEY = '6LfVuu0SAAAAACtAie4kaGfENivc9e9nR19-Swuu';
+    var PRIVATE_KEY = '6LfVuu0SAAAAAICQmZ80vGwqDBQWbTd3HswnLaf6';
+
+    var recaptcha = new Recaptcha(PUBLIC_KEY, PRIVATE_KEY);
+
+    res.locals.recaptcha_form =  recaptcha.toHTML();
+
     return res.view();
+  },
+
+  postContact: function (req, res) {
+    var Recaptcha = require('re-captcha');
+
+    var PUBLIC_KEY = '6LfVuu0SAAAAACtAie4kaGfENivc9e9nR19-Swuu';
+    var PRIVATE_KEY = '6LfVuu0SAAAAAICQmZ80vGwqDBQWbTd3HswnLaf6';
+
+    var recaptcha = new Recaptcha(PUBLIC_KEY, PRIVATE_KEY);
+
+    var data = {
+      remoteip: req.connection.remoteAddress,
+      challenge: req.body.recaptcha_challenge_field,
+      response: req.body.recaptcha_response_field
+    };
+    console.log(req.body);
+    console.log('in post contact');
+    recaptcha.verify(data, function(err) {
+      if (err)
+        //return res.view('contact');
+        console.log('not verified');
+      else
+        console.log('Recaptcha verified!!');
+    });
   },
 
 
@@ -58,12 +91,12 @@ module.exports = {
    appointments: function (req, res) {
     
     // Send a JSON response
-    return res.json({
-      hello: 'world'
-    });
+    return res.view();
   },
 
-
+  coming_soon: function  (req, res) {
+    return res.view();
+  },
 
 
   /**

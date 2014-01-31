@@ -37,9 +37,21 @@ module.exports.routes = {
     action: 'index'
   },
 
-  '/contact': {
+  'get /contact': {
     controller: 'HomeController',
     action: 'contact'
+  },
+
+  'post /contact': 'HomeController.postContact',
+
+  '/coming-soon': {
+    controller: 'HomeController',
+    action: 'coming_soon'
+  },
+
+  '/appointments': {
+    controller: 'HomeController',
+    action: 'appointments'
   }
 
   /*
