@@ -32,28 +32,14 @@ module.exports.routes = {
   // located at `views/home/index.ejs`
   // 
   // (This would also work if you had a file at: `/views/home.ejs`)
-  '/': {
-    controller: 'HomeController',
-    action: 'index'
-  },
-
-  'get /contact': {
-    controller: 'HomeController',
-    action: 'contact'
-  },
-
-  'post /contact': 'HomeController.postContact',
-
-  '/coming-soon': {
-    controller: 'HomeController',
-    action: 'coming_soon'
-  },
-
-  '/appointments': {
-    controller: 'HomeController',
-    action: 'appointments'
-  }
-
+  '/':              'HomeController.index',
+  'get /contact':   'HomeController.contact',
+  'post /contact':  'HomeController.postContact',
+  '/coming-soon':   'HomeController.coming_soon',
+  '/appointments':  'HomeController.appointments',
+  '/sugaring': 'ServiceController.sugaring',
+  '/facials': 'ServiceController.facials',
+    
   /*
   // But what if you want your home page to display
   // a signup form located at `views/user/signup.ejs`?
