@@ -72,14 +72,22 @@ module.exports = {
       challenge: req.body.recaptcha_challenge_field,
       response: req.body.recaptcha_response_field
     };
-    console.log(req.body);
-    console.log('in post contact');
+
+    var options = {
+      email: req.param('emailAddress'),
+      subject: req.param('subject'),
+      body: req.param('body')
+    };
+
     recaptcha.verify(data, function(err) {
       if (err)
         //return res.view('contact');
         console.log('not verified');
       else
-        console.log('Recaptcha verified!!');
+        {
+          EmailService.sendContactEmail(options);
+          console.log('Recaptcha verified!!');
+        }
     });
   },
 
