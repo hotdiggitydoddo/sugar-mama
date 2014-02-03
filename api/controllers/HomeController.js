@@ -80,14 +80,16 @@ module.exports = {
     };
 
     recaptcha.verify(data, function(err) {
-      if (err)
-        //return res.view('contact');
-        console.log('not verified');
-      else
-        {
+      if (err) {
+          req.flash.error('Captcha verification failed.  Please try again.');
+          return res.redirect('contact');
+      } else {
           EmailService.sendContactEmail(options);
+          req.flash('info', 'Message sent.  Thank you for your feedback!');
           console.log('Recaptcha verified!!');
-        }
+          req.flash.notice('Your message was sent!  Thank you for your feedback.')
+          return res.redirect('contact');
+      }
     });
   },
 

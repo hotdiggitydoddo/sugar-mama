@@ -10,14 +10,12 @@ body {
 
 }
 
-h2 {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Century Gothic','Tw Cen MT',Futura,"URW Gothic L",Arial,sans-serif !important;
 }
 
 .fancy-img {
-
     box-shadow: 5px 5px 5px #808080;
-    
 }
 
 .jumbotron {

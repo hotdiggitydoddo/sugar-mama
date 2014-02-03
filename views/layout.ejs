@@ -28,7 +28,27 @@
     <script src="/linker/js/bootstrap.min.js"></script>
     <!--SCRIPTS END-->
     <%- partial('partials/topNav') %>
-    <%- body %>
+    <div class="container">
+      <% if (flash_error) { %>
+        <div class="alert alert-danger alert-dismissable" style="margin-top: 20px;">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <% flash_error.forEach(function(error){ %>
+                <p><%=error.message %></p>
+            <% }) %>
+        </div>
+      <% } %>
+
+      <% if (flash_notice) { %>
+        <div class="alert alert-success alert-dismissable" style="margin-top: 20px;">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <% flash_notice.forEach(function(notice){ %>
+                <p><%=notice.message %></p>
+            <% }) %>
+        </div>
+      <% } %>
+
+      <%- body %>      
+    </div>
     <%- partial('partials/bottomNav') %>
 </body>
 </html>
