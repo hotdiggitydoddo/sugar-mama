@@ -35,9 +35,7 @@ module.exports = {
    about: function (req, res) {
     
     // Send a JSON response
-    return res.json({
-      hello: 'world'
-    });
+    return res.view();
   },
 
 
