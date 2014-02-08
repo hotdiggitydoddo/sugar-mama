@@ -40,6 +40,7 @@ module.exports.routes = {
   '/about':          'HomeController.about',
   '/sugaring': 'ServiceController.sugaring',
   '/facials': 'ServiceController.facials',
+  '/tanning': 'ServiceController.tanning',
       
   /*
   // But what if you want your home page to display
