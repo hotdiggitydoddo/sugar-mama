@@ -36,6 +36,13 @@ module.exports = {
     res.view();
   },
 
+  /**
+   * Action blueprints:
+   *    `/service/peels`
+   */
+   peels: function (req, res) {
+    res.view();
+  },
 
 
 

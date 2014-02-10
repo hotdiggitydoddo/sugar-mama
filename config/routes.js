@@ -41,6 +41,7 @@ module.exports.routes = {
   '/sugaring': 'ServiceController.sugaring',
   '/facials': 'ServiceController.facials',
   '/tanning': 'ServiceController.tanning',
+  '/peels': 'ServiceController.peels',
       
   /*
   // But what if you want your home page to display
