@@ -16,33 +16,16 @@
  */
 
 module.exports = {
-    
-  /**
-   * Action blueprints:
-   *    `/home/index`
-   */
    index: function (req, res) {
     return res.view({
       layout: "/splash-layout"
     });
   },
 
-
-  /**
-   * Action blueprints:
-   *    `/home/about`
-   */
    about: function (req, res) {
-    
-    // Send a JSON response
     return res.view();
   },
 
-
-  /**
-   * Action blueprints:
-   *    `/home/contact`
-   */
    contact: function (req, res) {
     
     var Recaptcha = require('re-captcha');
@@ -91,14 +74,7 @@ module.exports = {
     });
   },
 
-
-  /**
-   * Action blueprints:
-   *    `/home/appointments`
-   */
-   appointments: function (req, res) {
-    
-    // Send a JSON response
+  appointments: function (req, res) {
     return res.view();
   },
 
@@ -111,7 +87,5 @@ module.exports = {
    * Overrides for the settings in `config/controllers.js`
    * (specific to HomeController)
    */
-  _config: {}
-
-  
+  _config: {} 
 };
