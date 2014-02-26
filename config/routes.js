@@ -38,7 +38,7 @@ module.exports.routes = {
   '/coming-soon':   'HomeController.coming_soon',
   '/appointments':  'HomeController.appointments',
   '/about':          'HomeController.about',
-  '/sugaring': 'ServiceController.sugaring',
+  '/sugaring-waxing': 'ServiceController.sugaring',
   '/facials': 'ServiceController.facials',
   '/tanning': 'ServiceController.tanning',
   '/peels': 'ServiceController.peels',
